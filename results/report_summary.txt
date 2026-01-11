@@ -1,0 +1,33 @@
+VAE FOR HYBRID LANGUAGE MUSIC CLUSTERING
+================================================================================
+
+DATASET INFORMATION
+--------------------------------------------------------------------------------
+Total samples: 312
+Genres: ['blues' 'classical' 'country' 'disco']
+Genre distribution:
+  - blues: 100
+  - classical: 100
+  - country: 100
+  - disco: 12
+
+CONFIGURATION
+--------------------------------------------------------------------------------
+latent_dim: 32
+hidden_dim: 512
+n_clusters: 4
+device: cpu
+
+CLUSTERING RESULTS
+--------------------------------------------------------------------------------
+                      silhouette  calinski_harabasz  davies_bouldin       ari       nmi    purity  n_clusters  noise_points
+VAE (Audio + Lyrics)    0.069347          17.270356        3.010014  0.074825  0.126263  0.461538         4.0           0.0
+PCA Baseline            0.094822          25.292117        2.659851  0.237306  0.287295  0.641026         4.0           0.0
+
+KEY FINDINGS
+--------------------------------------------------------------------------------
+Best performing method: PCA Baseline
+Silhouette Score: 0.0948
+Adjusted Rand Index: 0.2373
+Normalized Mutual Information: 0.2873
+Cluster Purity: 0.6410
