@@ -1,13 +1,9 @@
 
 
-***
+
 
 ```markdown
 #  VAE for Hybrid Language Music Clustering
-
-
----
-
 
 ---
 
